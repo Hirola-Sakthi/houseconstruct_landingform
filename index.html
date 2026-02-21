@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Checklist for Building a House in Bangalore | House Construct</title>
+    <meta name="description"
+        content="Follow the legal checklist for building a house in Bangalore with House Construct. Verify documents, approvals, and property records before construction.">
+    <link rel="icon" type="image/webp" sizes="32x32" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { DEFAULT: '#c3921c', light: '#d4a82e', dark: '#a57b15' },
+                        dark: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        main: ['Jost', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background: #fff;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f5f5f5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c3921c;
+            border-radius: 3px;
+        }
+
+        .btn-gold {
+            background: #c3921c;
+            color: #fff;
+            font-weight: 600;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Jost', sans-serif;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-gold:hover {
+            background: #a57b15;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(195, 146, 28, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #c3921c;
+            font-weight: 600;
+            padding: 14px 32px;
+            border: 1.5px solid #c3921c;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Jost', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-outline:hover {
+            background: #c3921c;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(195, 146, 28, 0.3);
+        }
+
+        .btn-white {
+            background: #fff;
+            color: #1a1a1a;
+            font-weight: 600;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Jost', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-white:hover {
+            background: #c3921c;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(195, 146, 28, 0.3);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 13px 16px;
+            background: #f7f7f7;
+            border: 1.5px solid #e8e8e8;
+            border-radius: 8px;
+            color: #1a1a1a;
+            font-family: 'Jost', sans-serif;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border-color: #c3921c;
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(195, 146, 28, 0.1);
+        }
+
+        .form-input::placeholder {
+            color: #aaa;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 480px;
+            width: 90%;
+            padding: 40px;
+            position: relative;
+            transform: translateY(30px) scale(0.95);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .feature-card {
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.35s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #c3921c;
+            box-shadow: 0 15px 40px rgba(195, 146, 28, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .checklist-card {
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            transition: all 0.35s ease;
+        }
+
+        .checklist-card:hover {
+            border-color: rgba(195, 146, 28, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        .number-badge {
+            width: 38px;
+            height: 38px;
+            background: #c3921c;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .nav-link {
+            color: #666;
+            transition: color 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #c3921c;
+        }
+
+        .gold-line {
+            width: 50px;
+            height: 3px;
+            background: #c3921c;
+            border-radius: 2px;
+        }
+
+        .process-circle {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #c3921c;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .process-circle:hover {
+            background: #c3921c;
+        }
+
+        .process-circle:hover svg {
+            stroke: #fff;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* watsapp and call icon styles*/
+        .btn-floating:hover img {
+            margin-bottom: -3px;
+        }
+
+        .btn-floating {
+            position: fixed;
+            right: 25px;
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: 0;
+            z-index: 9999;
+            color: white;
+            transition: 0.2s;
+            margin-bottom: 0px;
+        }
+
+        .btn-floating:hover {
+            width: auto;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+
+        .btn-floating span {
+            font-size: 16px;
+            margin-left: 5px;
+            transition: 0.2s;
+            line-height: 0px;
+            display: none;
+        }
+
+        .btn-floating:hover span {
+            display: inline-block;
+        }
+
+        /* Phone */
+        .btn-floating.phone {
+            bottom: 85px;
+            background-color: black;
+        }
+
+        .btn-floating.phone:hover {
+            background-color: black;
+        }
+
+        /* WhatsApp */
+        .btn-floating.whatsapp {
+            background-color: #34af23;
+            bottom: 25px;
+        }
+
+        .btn-floating.whatsapp:hover {
+            background-color: #1f7a12;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                margin-top: 60px;
+            }
+
+            .nav-link {
+                font-size: 12px;
+            }
+
+            .main-logo {
+                height: 68px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 w-full z-[1000] transition-all duration-500 bg-white/0">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-center h-[86px]">
+            <a href="#" class="flex items-center gap-2">
+                <img src="/assets/images/houseconstruct-logo.webp" alt="HouseConstruct Logo"
+                    class="h-[86px] w-auto object-contain main-logo" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+
+    <!-- LEGAL GUIDE SECTION -->
+    <section class="w-full bg-[#fafafa] py-10 px-4 relative min-h-screen flex items-center pt-32 overflow-hidden">
+        <form id="modalForm" onsubmit="handleSubmit(event, 'modal')" action="/contact_form.php" method="POST"
+            class="max-w-6xl mx-auto p-8">
+            <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-8">
+                <h2 class="text-center font-semibold text-lg mb-8">Residential Building Approval Calculator
+                    Approximately</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="text-sm font-medium">Client Name</label>
+                        <input type="text" name="clientName"
+                            class="mt-1 w-full border border-gray-200 rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-orange-400" />
+                    </div>
+                    <div>
+                        <label class="text-sm font-medium">Select ULB</label>
+                        <select class="mt-1 w-full border border-gray-200 rounded-md px-3 py-2" name="ulb">
+                            <option>AddankingarPanchayat(ULB)</option>
+                            <option>Greater Visakhapatnam Municipal Corporation (ULB)</option>
+                            <option>Vijayawada Municipal Corporation (ULB)</option>
+                            <option>Guntur Municipal Corporation (ULB)</option>
+                            <option>Nellore Municipal Corporation (ULB)</option>
+                            <option>Kurnool Municipal Corporation (ULB)</option>
+                            <option>Kadapa Municipal Corporation (ULB)</option>
+                            <option>Rajamahendravaram Municipal Corporation (ULB)</option>
+                            <option>Kakinada Municipal Corporation (ULB)</option>
+                            <option>Eluru Municipal Corporation (ULB)</option>
+                            <option>Ongole Municipal Corporation (ULB)</option>
+                            <option>Tirupati Municipal Corporation (ULB)</option>
+                            <option>Chittoor Municipal Corporation (ULB)</option>
+                            <option>Anantapur Municipal Corporation (ULB)</option>
+                            <option>Srikakulam Municipal Corporation (ULB)</option>
+                            <option>Vizianagaram Municipal Corporation (ULB)</option>
+                            <option>Mangalagiri–Tadepalli Municipal Corporation (ULB)</option>
+                            <option>Machilipatnam Municipal Corporation (ULB)</option>
+
+                            <!-- Municipalities (ULB) -->
+                            <option>Adoni Municipality (ULB)</option>
+                            <option>Allagadda Municipality (ULB)</option>
+                            <option>Amalapuram Municipality (ULB)</option>
+                            <option>Anakapalle Municipality (ULB)</option>
+                            <option>Bapatla Municipality (ULB)</option>
+                            <option>Bhimavaram Municipality (ULB)</option>
+                            <option>Bobbili Municipality (ULB)</option>
+                            <option>Chilakaluripet Municipality (ULB)</option>
+                            <option>Dharmavaram Municipality (ULB)</option>
+                            <option>Elamanchili Municipality (ULB)</option>
+                            <option>Gooty Municipality (ULB)</option>
+                            <option>Gudur Municipality (ULB)</option>
+                            <option>Hindupur Municipality (ULB)</option>
+                            <option>Jaggayyapeta Municipality (ULB)</option>
+                            <option>Kandukur Municipality (ULB)</option>
+                            <option>Kavali Municipality (ULB)</option>
+                            <option>Kovvur Municipality (ULB)</option>
+                            <option>Mandapeta Municipality (ULB)</option>
+                            <option>Madanapalle Municipality (ULB)</option>
+                            <option>Narasaraopet Municipality (ULB)</option>
+                            <option>Nidadavole Municipality (ULB)</option>
+                            <option>Nuzvid Municipality (ULB)</option>
+                            <option>Palacole Municipality (ULB)</option>
+                            <option>Palasa–Kasibugga Municipality (ULB)</option>
+                            <option>Peddapuram Municipality (ULB)</option>
+                            <option>Pithapuram Municipality (ULB)</option>
+                            <option>Proddatur Municipality (ULB)</option>
+                            <option>Punganur Municipality (ULB)</option>
+                            <option>Rayachoti Municipality (ULB)</option>
+                            <option>Repalle Municipality (ULB)</option>
+                            <option>Salur Municipality (ULB)</option>
+                            <option>Samalkot Municipality (ULB)</option>
+                            <option>Sattenapalle Municipality (ULB)</option>
+                            <option>Sompeta Municipality (ULB)</option>
+                            <option>Srikalahasti Municipality (ULB)</option>
+                            <option>Tadepalligudem Municipality (ULB)</option>
+                            <option>Tadipatri Municipality (ULB)</option>
+                            <option>Tuni Municipality (ULB)</option>
+                            <option>Venkatagiri Municipality (ULB)</option>
+                            <option>Yemmiganur Municipality (ULB)</option>
+
+                            <!-- Nagar Panchayats (ULB) -->
+                            <option>Allur Nagar Panchayat (ULB)</option>
+                            <option>Atmakur Nagar Panchayat (ULB)</option>
+                            <option>Bhimadole Nagar Panchayat (ULB)</option>
+                            <option>Chintalapudi Nagar Panchayat (ULB)</option>
+                            <option>Dhone Nagar Panchayat (ULB)</option>
+                            <option>Giddalur Nagar Panchayat (ULB)</option>
+                            <option>Gollaprolu Nagar Panchayat (ULB)</option>
+                            <option>Jammalamadugu Nagar Panchayat (ULB)</option>
+                            <option>Kadiri Nagar Panchayat (ULB)</option>
+                            <option>Kalyandurg Nagar Panchayat (ULB)</option>
+                            <option>Kothavalasa Nagar Panchayat (ULB)</option>
+                            <option>Macherla Nagar Panchayat (ULB)</option>
+                            <option>Markapur Nagar Panchayat (ULB)</option>
+                            <option>Nandyal Nagar Panchayat (ULB)</option>
+                            <option>Pamur Nagar Panchayat (ULB)</option>
+                            <option>Parchur Nagar Panchayat (ULB)</option>
+                            <option>Piduguralla Nagar Panchayat (ULB)</option>
+                            <option>Puttur Nagar Panchayat (ULB)</option>
+                            <option>Rayadurg Nagar Panchayat (ULB)</option>
+                            <option>Tekkali Nagar Panchayat (ULB)</option>
+                            <option>Vinukonda Nagar Panchayat (ULB)</option>
+
+                            <!-- Urban Development Authorities (UDA) -->
+                            <option>Amalapuram Urban Development Authority (UDA)</option>
+                            <option>Visakhapatnam Urban Development Authority (UDA)</option>
+                            <option>Vijayawada Urban Development Authority (UDA)</option>
+                            <option>Tirupati Urban Development Authority (UDA)</option>
+                            <option>Anantapur Urban Development Authority (UDA)</option>
+                            <option>Kadapa Urban Development Authority (UDA)</option>
+                            <option>Kakinada Urban Development Authority (UDA)</option>
+                            <option>Rajamahendravaram Urban Development Authority (UDA)</option>
+                            <option>Srikakulam Urban Development Authority (UDA)</option>
+                            <option>Vizianagaram Urban Development Authority (UDA)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="text-sm font-medium">Case Type</label>
+                        <select class="mt-1 w-full border border-gray-200 rounded-md px-3 py-2" name="caseType">
+                            <option>Select</option>
+                            <option>New Case</option>
+                            <option>Addition Alteration</option>
+                            <option>Demolition & Re-construction</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-sm font-medium">Nature of Site</label>
+                        <select class="mt-1 w-full border border-gray-200 rounded-md px-3 py-2" name="siteNature">
+                            <option>Select</option>
+                            <option>Approved Layout(L.P)</option>
+                            <option>Old Build Up Area/Gramkanta/Congested/Regularised plot under LRS</option>
+                            <option>Plot Part Of RLP/ IPLP But Not Regularized(Not covered in LRS)</option>
+                            <option>Newly Developed/ Built Up Area</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="text-sm font-medium">Plot Dimensions (Please Enter in Meters)<span
+                            class="text-[#c3921c] text-xs ml-1">Unit Conversion</span></label>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
+                        <input placeholder="Width" class="border border-gray-200 rounded-md px-3 py-2"
+                            name="plotWidth" />
+                        <input placeholder="Length" class="border border-gray-200 rounded-md px-3 py-2"
+                            name="plotLength" />
+                        <input placeholder="Area" class="border border-gray-200 rounded-md px-3 py-2" name="plotArea" />
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="text-sm font-medium">
+                        Select No Of Floors Going To Construct</label>
+                    <select class="mt-1 w-full border border-gray-200 rounded-md px-3 py-2" name="floors">
+                        <option>Select</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="text-sm font-medium">Have Previous Approval (OR) Whether any building are there
+                        prior to 1985?</label>
+                    <div class="flex gap-6 mt-2">
+                        <label class="flex items-center gap-2 text-sm"><input type="radio" name="hasPreviousApproval"
+                                value="yes" class="accent-[#c3921c]">Yes</label>
+                        <label class="flex items-center gap-2 text-sm"><input type="radio" name="hasPreviousApproval"
+                                value="no" class="accent-[#c3921c]">No</label>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="text-sm font-medium">
+                        Road Widening Length (In Meters)
+                    </label>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-2">
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Front</span>
+                            <input value="0.00" class="border border-gray-200 rounded-md px-3 py-2" name="roadFront" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Rear</span>
+                            <input value="0.00" class="border border-gray-200 rounded-md px-3 py-2" name="roadRear" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Side 1</span>
+                            <input value="0.00" class="border border-gray-200 rounded-md px-3 py-2" name="roadSide1" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Side 2</span>
+                            <input value="0.00" class="border border-gray-200 rounded-md px-3 py-2" name="roadSide2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="text-sm font-medium">
+                        Set Back Details
+                        <span class="text-[#c3921c] text-xs ml-1">Setback Table</span>
+                    </label>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-2">
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Front</span>
+                            <input value="1.5" class="border border-gray-200 rounded-md px-3 py-2"
+                                name="setbackFront" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Rear</span>
+                            <input value="1.0" class="border border-gray-200 rounded-md px-3 py-2" name="setbackRear" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Side 1</span>
+                            <input value="1.0" class="border border-gray-200 rounded-md px-3 py-2"
+                                name="setbackSide1" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-xs text-gray-500">Side 2</span>
+                            <input value="1.0" class="border border-gray-200 rounded-md px-3 py-2"
+                                name="setbackSide2" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-end mb-6">
+                    <div class="md:col-span-2">
+                        <label class="text-sm font-medium">Market Value per Sq.yard</label>
+                        <input class="mt-1 w-full border border-gray-200 rounded-md px-3 py-2" name="marketValue" />
+                    </div>
+                    <button class="text-[#c3921c] text-sm font-medium  hover:underline">Find Market Value</button>
+                </div>
+                <p class="text-xs text-gray-600 mb-6">
+                    <strong>Note:</strong> Calculate LRS 33% compounding Charges separately based
+                    on your requirement. <span class="text-[#c3921c] cursor-pointer">Link</span>
+                </p>
+                <div class="flex justify-center">
+                    <button class="btn-gold" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-10 bg-[#fafafa]">
+        <div class="max-w-4xl mx-auto px-6">
+            <div
+                class="bg-white rounded-3xl p-10 md:p-14 text-center shadow-[0_20px_60px_rgba(0,0,0,0.06)] border border-gray-100 relative overflow-hidden">
+                <div
+                    class="absolute top-0 left-10 right-10 h-[3px] bg-gradient-to-r from-transparent via-gold to-transparent rounded-b-full">
+                </div>
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-gold/[0.08] border border-gold/[0.15] rounded-full mb-5">
+                    <span class="text-gold text-xs font-semibold tracking-widest uppercase">Limited Time Offer</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-3 text-dark">Get Your Exact <span
+                        class="text-gold">Approval Cost</span></h2>
+                <p class="text-gray-500 text-base mb-8 max-w-xl mx-auto">Find out your exact approval cost with complete
+                    clarity and professional support.</p>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                    <button onclick="openModal()" class="btn-gold text-base !py-4 !px-10 justify-center">Get Free
+                        Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg></button>
+                    <a href="tel:+917557557957​" class="btn-outline text-base !py-4 !px-10 justify-center"><svg
+                            class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5 bg-white border-t border-gray-100">
+        <div>
+            <a href="tel:+917557557957​">
+                <button class="btn-floating phone">
+                    <img src="assets/images/call-icon.png" width="30" height="30" alt="Phone" class="inline-block" />
+                    <span>Call us</span>
+                </button>
+            </a>
+            <a href="https://wa.me/917557557957" target="_blank" rel="noopener noreferrer">
+                <button class="btn-floating whatsapp">
+                    <img src="assets/images/whatsapp-icon.png" width="30" height="30" alt="WhatsApp"
+                        class="inline-block" />
+                    <span>Chat</span>
+                </button>
+            </a>
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="/assets/images/houseconstruct-logo.webp" alt="HouseConstruct Logo"
+                        class="h-[86px] w-auto object-contain" />
+                </div>
+                <p class="text-gray-400 text-xs">© 2025 House Construct. 27+ Years of Crafting Exceptional Living Spaces
+                    in Bangalore.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-gold transition-colors text-xs">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition-colors text-xs">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition-colors text-xs">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SUCCESS TOAST -->
+    <div id="successToast"
+        class="fixed bottom-6 right-6 bg-white border border-green-200 rounded-xl px-5 py-4 z-[10001] flex items-center gap-3 opacity-0 translate-y-4 transition-all duration-500 pointer-events-none shadow-lg">
+        <div class="w-8 h-8 bg-green-50 flex items-center justify-center rounded-full"><svg
+                class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+            </svg></div>
+        <div>
+            <p class="font-semibold text-sm text-dark">Thank You!</p>
+            <p class="text-gray-400 text-xs">Our team will contact you within 24 hours.</p>
+        </div>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 60) {
+                nav.style.background = 'rgba(255,255,255,0.97)';
+                nav.style.backdropFilter = 'blur(10px)';
+                nav.style.boxShadow = '0 1px 20px rgba(0,0,0,0.06)';
+            } else {
+                nav.style.background = 'rgba(255,255,255,0)';
+                nav.style.backdropFilter = 'none';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Hero
+        const heroTL = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        heroTL
+            .from('.hero-content > *', { y: 35, opacity: 0, stagger: 0.1, duration: 0.7 })
+            .from('.hero-form', { x: 50, opacity: 0, duration: 0.8, ease: 'power2.out' }, '-=0.4');
+
+        // Counters
+        document.querySelectorAll('[data-count]').forEach(el => {
+            const target = parseInt(el.dataset.count);
+            const suffix = el.dataset.suffix || '';
+            ScrollTrigger.create({
+                trigger: el, start: 'top 90%', once: true,
+                onEnter: () => {
+                    gsap.to({ val: 0 }, {
+                        val: target, duration: 2, ease: 'power2.out',
+                        onUpdate: function () {
+                            el.textContent = Math.floor(this.targets()[0].val) + suffix;
+                        }
+                    });
+                }
+            });
+        });
+
+        // About
+        gsap.from('.about-left', { scrollTrigger: { trigger: '#about', start: 'top 75%', once: true }, x: -40, opacity: 0, duration: 0.8 });
+        gsap.from('.about-right > *', { scrollTrigger: { trigger: '#about', start: 'top 75%', once: true }, y: 30, opacity: 0, stagger: 0.08, duration: 0.6 });
+
+        // Features
+        gsap.set('.feature-card', { opacity: 0, y: 35 });
+        ScrollTrigger.create({
+            trigger: '#why-us', start: 'top 80%', once: true,
+            onEnter: () => {
+                gsap.to('.feature-card', { opacity: 1, y: 0, stagger: 0.08, duration: 0.5, ease: 'power2.out' });
+            }
+        });
+
+        // Portfolio zigzag
+        document.querySelectorAll('.portfolio-item').forEach((item, i) => {
+            const dir = i % 2 === 0 ? -40 : 40;
+            gsap.from(item.children, { scrollTrigger: { trigger: item, start: 'top 80%', once: true }, x: dir, opacity: 0, stagger: 0.15, duration: 0.7 });
+        });
+
+        // Checklist
+        gsap.set('.checklist-card', { opacity: 0, x: 40 });
+        ScrollTrigger.create({
+            trigger: '#legal', start: 'top 80%', once: true,
+            onEnter: () => {
+                gsap.to('.checklist-card', { opacity: 1, x: 0, stagger: 0.08, duration: 0.5, ease: 'power2.out' });
+            }
+        });
+
+        // Process
+        gsap.from('.process-step', { scrollTrigger: { trigger: '#process', start: 'top 70%', once: true }, y: 40, opacity: 0, stagger: 0.12, duration: 0.6, ease: 'back.out(1.4)' });
+
+        // Modal
+        function openPageLoadModal() { document.getElementById('pageLoadModal').classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closePageLoadModal() { document.getElementById('pageLoadModal').classList.remove('active'); document.body.style.overflow = ''; localStorage.setItem('pageLoadFormSubmitted', 'true'); }
+        function openModal() { document.getElementById('formModal').classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeModal() { localStorage.setItem('pageLoadFormSubmitted', 'true'); document.getElementById('formModal').classList.remove('active'); document.body.style.overflow = ''; }
+        function closeModalOutside(e) { if (e.target === e.currentTarget) closeModal(); }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        // Form
+        function handleSubmit(event, source) {
+            event.preventDefault();
+
+            const form = event.target;
+            if (form.dataset.submitted) return;
+
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = source === 'modal'
+                ? 'Submitting...'
+                : 'Submitting...';
+
+            submitButton.disabled = true;
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text())
+                .then(text => {
+                    console.log("Raw response:", text);
+
+                    let data = {};
+                    try {
+                        data = JSON.parse(text);
+                    } catch (e) {
+                        alert("Invalid JSON response from server");
+                        throw e;
+                    }
+
+                    console.log('Success:', data);
+
+                    if (data.status === 'success') {
+                        alert('Form submitted successfully!');
+                        localStorage.setItem('pageLoadFormSubmitted', 'true');
+                        showToast();
+                        form.reset();
+
+
+                    } else {
+                        if (data.errors) {
+                            if (data.errors.phone) alert(data.errors.phone);
+                            if (data.errors.name) alert(data.errors.name);
+                        } else {
+                            alert(data.message || 'An error occurred');
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred during form submission.');
+                })
+                .finally(() => {
+                    submitButton.textContent =
+                        source === 'modal'
+                            ? 'Submit'
+                            : 'Submit';
+
+                    submitButton.disabled = false;
+                });
+        }
+        function showToast() {
+            const t = document.getElementById('successToast');
+            t.style.opacity = '1'; t.style.transform = 'translateY(0)'; t.style.pointerEvents = 'all';
+            setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateY(16px)'; t.style.pointerEvents = 'none'; }, 4000);
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(l => {
+            l.addEventListener('click', e => { e.preventDefault(); document.querySelector(l.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' }); });
+        });
+
+        // Select fix
+        document.querySelectorAll('select.form-input').forEach(s => { s.addEventListener('change', function () { this.style.color = this.value ? '#1a1a1a' : '#aaa'; }); });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const alreadySubmitted = localStorage.getItem("pageLoadFormSubmitted");
+
+            if (!alreadySubmitted) {
+                setTimeout(() => {
+                    openPageLoadModal();
+                }, 0);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
